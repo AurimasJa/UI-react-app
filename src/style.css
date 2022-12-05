@@ -1,0 +1,124 @@
+.content {
+  width: 900px;
+  background-color: #fff;
+  border-left: 1px solid silver;
+  border-right: 1px solid silver;
+  float: left;
+}
+
+h3 a {
+  text-decoration: none;
+}
+
+.owner {
+  color: darkgrey;
+  font-size: 14px;
+} /* Bordered form */
+
+/* Full-width inputs */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.mybutton {
+  background-color: #04aa6d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+.margin-leftlogreg {
+  margin: 10px;
+}
+
+.loginmain {
+  text-align: center;
+  font-size: 16px;
+  color: brown;
+}
+.App {
+  background-color: white;
+}
+
+.Auth-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Auth-form {
+  width: 420px;
+  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.Auth-form-content {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+.Auth-form-title {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 24px;
+  color: rgb(34, 34, 34);
+  font-weight: 800;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+}
+.table {
+  box-shadow: 5px 10px 10px rgb(0 0 0 / 10%);
+  border-collapse: collapse;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: auto;
+  text-align: center;
+}
+
+.table thead th {
+  background: #016e59;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.table td,
+.table th {
+  padding: 10px 20px;
+}
+
+.table tbody tr:nth-of-type(even) {
+  background: #eeeeee;
+}
+.table tbody tr:nth-of-type(odd) {
+  background: #ffe6e6;
+}
+
+.table tbody tr:nth-of-type(odd):hover {
+  background-color: #90ee90;
+}
+
+.table tbody tr:nth-of-type(even):hover {
+  background-color: #90ee90;
+}
