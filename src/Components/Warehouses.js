@@ -13,7 +13,9 @@ function Sandeliai() {
     return <Navigate to="/" />;
   }
   const removeContactHandler = async (id) => {
-    await backend.delete(`${"http://localhost:5004/api/warehouses/" + id}`);
+    await backend.delete(
+      `${"https://myapiwarehouse.azurewebsites.net/api/warehouses/" + id}`
+    );
     const newWarehouses = warehouses.filter((warehouse) => {
       return warehouse.id !== id;
     });
@@ -42,7 +44,7 @@ function Sandeliai() {
     });
   };
   function getWarehouses() {
-    const url = "http://localhost:5004/api/warehouses/";
+    const url = "https://myapiwarehouse.azurewebsites.net/api/warehouses/";
     console.log(currentUser);
     backend.get(url).then((resp) => {
       //store data loaded

@@ -3,12 +3,12 @@ import axios from "axios";
 import backend from "../backend/backend.tsx";
 
 // const API_URL = Constants.API_URL_GET_ALL_WAREHOUSES;
-const API_URL = "http://localhost:8080/api/auth/";
+const API_URL = "https://myapiwarehouse.azurewebsites.net/api/auth/";
 
 class AuthService {
   login(username, password) {
     return axios
-      .post("http://localhost:5004/api/login", {
+      .post("https://myapiwarehouse.azurewebsites.net/api/login", {
         username,
         password,
       })
@@ -27,18 +27,21 @@ class AuthService {
   }
 
   register(username, email, password) {
-    return axios.post("http://localhost:5004/api/register", {
+    return axios.post("https://myapiwarehouse.azurewebsites.net/api/register", {
       username,
       email,
       password,
     });
   }
   registerManager(username, email, password) {
-    return backend.post("http://localhost:5004/api/register/manager", {
-      username,
-      email,
-      password,
-    });
+    return backend.post(
+      "https://myapiwarehouse.azurewebsites.net/api/register/manager",
+      {
+        username,
+        email,
+        password,
+      }
+    );
   }
   getCurrentUser() {
     return JSON.parse(localStorage.getItem("user"));

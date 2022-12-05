@@ -9,7 +9,7 @@ export default function Create() {
   const [description, setDescription] = useState("");
   const [address, setAddress] = useState("");
   const postData = () => {
-    backend.post(`http://localhost:5004/api/warehouses/`, {
+    backend.post(`https://myapiwarehouse.azurewebsites.net/api/warehouses/`, {
       name,
       description,
       address,

@@ -27,7 +27,7 @@ export default function Update() {
   console.log(id);
   const updateAPIData = () => {
     backend.put(
-      `http://localhost:5004/api/warehouses/${warehouseId}/zones/${zoneId}/items/${id}`,
+      `https://myapiwarehouse.azurewebsites.net/api/warehouses/${warehouseId}/zones/${zoneId}/items/${id}`,
       {
         name,
         description,

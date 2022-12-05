@@ -15,7 +15,7 @@ export default function Create() {
   }, []);
   const postData = () => {
     backend.post(
-      `http://localhost:5004/api/warehouses/${warehouseId}/zones/${zoneId}/items`,
+      `https://myapiwarehouse.azurewebsites.net/api/warehouses/${warehouseId}/zones/${zoneId}/items`,
       {
         name,
         description,

@@ -11,9 +11,12 @@ export default function Create() {
     setWarehouseId(localStorage.getItem("WarehouseId"));
   }, []);
   const postData = () => {
-    backend.post(`http://localhost:5004/api/warehouses/${warehouseId}/zones/`, {
-      name,
-    });
+    backend.post(
+      `https://myapiwarehouse.azurewebsites.net/api/warehouses/${warehouseId}/zones/`,
+      {
+        name,
+      }
+    );
     // this.props.router.navigate("/profile");
   };
   return (

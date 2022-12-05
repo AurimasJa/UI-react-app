@@ -16,7 +16,7 @@ function CertainWarehouse() {
   if (!currentUser) {
     return <Navigate to="/" />;
   }
-  const url = "http://localhost:5004/api/warehouses/";
+  const url = "https://myapiwarehouse.azurewebsites.net/api/warehouses/";
   const navigateToCreate = () => {
     localStorage.setItem("WarehouseId", location.state.id);
     navigate("/createzone");
@@ -30,7 +30,7 @@ function CertainWarehouse() {
   const removeZoneHandler = async (id) => {
     await backend.delete(
       `${
-        "http://localhost:5004/api/warehouses/" +
+        "https://myapiwarehouse.azurewebsites.net/api/warehouses/" +
         location.state.id +
         `/zones/` +
         id

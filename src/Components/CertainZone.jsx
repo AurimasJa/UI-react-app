@@ -11,7 +11,7 @@ function CertainZone() {
   const navigate = useNavigate();
   const [show, setShow] = useState(true);
   const [items, setItems] = useState([]);
-  const url = "http://localhost:5004/api/warehouses/";
+  const url = "https://myapiwarehouse.azurewebsites.net/api/warehouses/";
   const location = useLocation();
   const currentUser = AuthService.getCurrentUser();
   if (!currentUser) {
@@ -21,7 +21,7 @@ function CertainZone() {
     console.log(location.state);
     await backend.delete(
       `${
-        "http://localhost:5004/api/warehouses/" +
+        "https://myapiwarehouse.azurewebsites.net/api/warehouses/" +
         location.state.warehouseId +
         `/zones/` +
         location.state.id +
