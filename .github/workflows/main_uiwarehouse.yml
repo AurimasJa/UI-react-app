@@ -61,4 +61,4 @@ jobs:
           app-name: 'uiwarehouse'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_09B8C688D87C43D7BE9293A4666A565A }}
-          package: .
+          package: release.zip
