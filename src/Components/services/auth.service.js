@@ -3,7 +3,7 @@ import axios from "axios";
 import backend from "../backend/backend.tsx";
 
 // const API_URL = Constants.API_URL_GET_ALL_WAREHOUSES;
-const API_URL = "https://myapiwarehouse.azurewebsites.net/api/auth/";
+// const API_URL = "https://myapiwarehouse.azurewebsites.net/api/auth/";
 
 class AuthService {
   login(username, password) {

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import AuthService from "./services/auth.service";
 import { Navigate } from "react-router-dom";
-import backend, { replaceBackend } from "../Components/backend/backend.tsx";
-import { Link, useNavigate } from "react-router-dom";
+import backend from "../Components/backend/backend.tsx";
+import { useNavigate } from "react-router-dom";
 
 function Sandeliai() {
   const navigate = useNavigate();

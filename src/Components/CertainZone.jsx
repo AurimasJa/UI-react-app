@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import "../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import backend from "./backend/backend.tsx";
 
 import AuthService from "./services/auth.service";
-import { Link, useNavigate, Navigate } from "react-router-dom";
+import { useNavigate, Navigate } from "react-router-dom";
 
 function CertainZone() {
   const navigate = useNavigate();
@@ -46,16 +46,16 @@ function CertainZone() {
     localStorage.setItem("ZoneId", location.state.id);
     navigate("/updateitem");
   };
-  const ToEditItem = (warehouse) => {
-    navigate("/", {
-      state: {
-        id: warehouse.id,
-        name: warehouse.name,
-        address: warehouse.address,
-        description: warehouse.description,
-      },
-    });
-  };
+  // const ToEditItem = (warehouse) => {
+  //   navigate("/", {
+  //     state: {
+  //       id: warehouse.id,
+  //       name: warehouse.name,
+  //       address: warehouse.address,
+  //       description: warehouse.description,
+  //     },
+  //   });
+  // };
   function getItems(id, warehouseId) {
     backend.get(url + warehouseId + `/zones/` + id + `/items`).then((resp) => {
       //store data loaded

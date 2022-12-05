@@ -1,5 +1,5 @@
 import { useLocation, useNavigate, useParams } from "react-router-dom";
-import React, { Component } from "react";
+import React from "react";
 export const withRouter = (Component) => {
   function ComponentWithRouterProp(props) {
     let location = useLocation();

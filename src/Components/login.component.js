@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import AuthService from "./services/auth.service";
 import { withRouter } from "./common/with-router";
-import backend, { replaceBackend } from "../Components/backend/backend.tsx";
+import { replaceBackend } from "../Components/backend/backend.tsx";
 // import { withRouter } from "../common/with-router";
 import axios from "axios";
 // import { Link } from "react-router-dom";

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Button, Checkbox, Form } from "semantic-ui-react";
-import axios from "axios";
+import { Button, Form } from "semantic-ui-react";
 import AuthService from "./services/auth.service";
 import backend from "./backend/backend.tsx";
 // import { useHistory } from "react-router";

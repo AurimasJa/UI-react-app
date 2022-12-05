@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Button, Checkbox, Form } from "semantic-ui-react";
+import { Button, Form } from "semantic-ui-react";
 
 import backend from "./backend/backend.tsx";
 
-import AuthService from "./services/auth.service";
 export default function Create() {
   const [name, setName] = useState("");
   const [warehouseId, setWarehouseId] = useState("");

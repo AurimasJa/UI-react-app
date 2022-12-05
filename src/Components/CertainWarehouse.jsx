@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import "../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link, useNavigate, Navigate } from "react-router-dom";
+import { useNavigate, Navigate } from "react-router-dom";
 import backend from "./backend/backend.tsx";
 
 import AuthService from "./services/auth.service";
@@ -42,7 +42,7 @@ function CertainWarehouse() {
 
     setZones(newZones);
   };
-  const toCertainZone = (zone, warehouseIdas) => {
+  const toCertainZone = (zone) => {
     navigate("/certainzone", {
       state: {
         id: zone.id,
@@ -87,7 +87,7 @@ function CertainWarehouse() {
                 <td>
                   <button
                     onClick={() => {
-                      toCertainZone(zone, location.state.id);
+                      toCertainZone(zone);
                     }}
                     className="btn btn-primary"
                   >

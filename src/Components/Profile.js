@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Navigate } from "react-router-dom";
 // import AuthService from "../services/auth.service";
 import AuthService from "./services/auth.service";
-import backend, { replaceBackend } from "../Components/backend/backend.tsx";
+import { replaceBackend } from "../Components/backend/backend.tsx";
 import axios from "axios";
 
 export default class Profile extends Component {
