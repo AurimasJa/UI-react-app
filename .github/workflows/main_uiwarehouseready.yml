@@ -26,7 +26,12 @@ jobs:
           npm install
           npm run build --if-present
           npm run test --if-present
-      
+      - name: Zip Release
+        uses: TheDoctor0/zip-release@0.6.2
+        with:
+          filename: release.zip
+          path: ./build/*
+
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
@@ -53,4 +58,4 @@ jobs:
           app-name: 'uiwarehouseready'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_652F601D6BE740178AE4C3B8A1AA384C }}
-          package: .
+          package: release.zip
